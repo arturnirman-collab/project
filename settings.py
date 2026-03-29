@@ -3,6 +3,12 @@ from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent
 
+ALGORITHM = "HS256"
+SECRET_KEY = environ.get("SECRET_KEY")
+
+EXPIRES_ACCESS = 3
+EXPIRES_REFRESH = 30
+
 POSTGRES_DB = environ.get("POSTGRES_DB")
 POSTGRES_USER = environ.get("POSTGRES_USER")
 POSTGRES_PASSWORD = environ.get("POSTGRES_PASSWORD")
